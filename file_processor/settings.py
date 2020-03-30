@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_swagger',
-    # 'django_rq',
     'task',
 ]
 
@@ -136,17 +135,6 @@ STATIC_URL = '/static/'
 #     },
 # }
 
-
-# CACHES = {
-#     'default': {
-#         'BACKEND': 'redis_cache.cache.RedisCache',
-#         # 'BACKEND': 'django_redis.cache.RedisCache',
-#         'LOCATION': '127.0.0.1:6379:1',
-#         'OPTIONS': {
-#             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
-#         }
-#     }
-# }
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,

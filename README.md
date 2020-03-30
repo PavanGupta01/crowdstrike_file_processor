@@ -1,4 +1,6 @@
 
+## Install Redis-
+https://askubuntu.com/questions/868848/how-to-install-redis-on-ubuntu-16-04
 
 ## How to launch celery workers-
 celery -A file_processor.celery worker -l DEBUG -E

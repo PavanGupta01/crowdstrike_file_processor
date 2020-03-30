@@ -24,12 +24,11 @@ from task import views
 
 schema_view = get_swagger_view(title='File Analysis Service')
 
-
 router = routers.DefaultRouter()
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path(r'^$', schema_view),
     path('', include(router.urls)),
-    path(r'task/', include(('task.urls', 'task'), namespace='task')),
+    path(r'tasks/', include(('task.urls', 'task'), namespace='task')),
 ]
